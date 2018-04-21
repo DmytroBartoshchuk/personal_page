@@ -12,3 +12,15 @@ class TravelView(TemplateView):
 
 class ElementsView(TemplateView):
     template_name = 'elements.html'
+
+
+class ThaiView(TemplateView):
+    template_name = 'countries/thai.html'
+
+
+class SriLankaView(TemplateView):
+    template_name = 'countries/srilanka.html'
+
+
+class PolandView(TemplateView):
+    template_name = 'countries/poland.html'
