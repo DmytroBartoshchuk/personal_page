@@ -24,3 +24,7 @@ class SriLankaView(TemplateView):
 
 class PolandView(TemplateView):
     template_name = 'countries/poland.html'
+
+
+class ExploreUkraineView(TemplateView):
+    template_name = 'countries/ukraine.html'
