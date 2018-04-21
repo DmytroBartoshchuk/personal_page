@@ -7,7 +7,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
         {% load staticfiles %}
-		<link rel="stylesheet" href="../static/assets/css/main.css" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
 	</head>
 	<body class="is-preload">
 
@@ -24,7 +24,7 @@
 				<ul class="links">
 					<li><a href="{% url 'index' %}">Home</a></li>
 					<li><a href="{% url 'travel' %}">Travel</a></li>
-                    <li><a href="{% url 'elements' %}">Elements</a></li>
+                    <!--<li><a href="{% url 'elements' %}">Elements</a></li>-->
 				</ul>
 			</nav>
 
@@ -35,16 +35,15 @@
             <div class="inner">
                 <div class="content">
                     <section>
-                        <h3>Accumsan montes viverra</h3>
-                        <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+                        <h3>Be yourself</h3>
+                        <p>You’ve gotta dance like there’s nobody watching, Love like you’ll never be hurt, Sing like there’s nobody listening, And live like it’s heaven on earth. (William W. Purkey)</p>
                     </section>
                     <section>
-                        <h4>Sem turpis amet semper</h4>
+                        <h4>Quotes</h4>
                         <ul class="alt">
-                            <li><a href="#">Dolor pulvinar sed etiam.</a></li>
-                            <li><a href="#">Etiam vel lorem sed amet.</a></li>
-                            <li><a href="#">Felis enim feugiat viverra.</a></li>
-                            <li><a href="#">Dolor pulvinar magna etiam.</a></li>
+                            <li><a href="#">Wisdom is knowing how little we know.</a></li>
+                            <li><a href="#">Success is not in what you have, but who you are.</a></li>
+                            <li><a href="#">Success does not come to you … you go to it.</a></li>
                         </ul>
                     </section>
                     <section>
@@ -64,11 +63,11 @@
         </footer>
 
     <!-- Scripts -->
-        <script src="../static/assets/js/jquery.min.js"></script>
-        <script src="../static/assets/js/browser.min.js"></script>
-        <script src="../static/assets/js/breakpoints.min.js"></script>
-        <script src="../static/assets/js/util.js"></script>
-        <script src="../static/assets/js/main.js"></script>
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/browser.min.js' %}"></script>
+        <script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+        <script src="{% static 'assets/js/util.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
 
 	</body>
 </html>
